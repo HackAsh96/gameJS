@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="700"></canvas>
+    <h1 id="welcome">Welcome</h1>
+    <h3 id="pg">to the colorful game</h3>
+    <img id="blue" src="./image/ball/blue.png" />
+    <img id="green" src="./image/ball/green.png" />
+    <img id="grey" src="./image/ball/grey.png" />
+    <img id="orange" src="./image/ball/orange.png" />
+    <img id="purple" src="./image/ball/purple.png" />
+    <img id="red" src="./image/ball/red.png" />
+    <img id="yellow" src="./image/ball/yellow.png" />
+    <!-- <button id="startBtn" onClick="initialize()">START</button> -->
+    <img
+      id="startBtn"
+      class="btn"
+      src="./image/buttons/basicBtn.png"
+      onclick="setJS('basicGame.js')"
+    />
+    <img
+      id="timeBtn"
+      class="btn"
+      src="./image/buttons/timeBtn.png"
+      onclick="setJS('timeTrial.js')"
+    />
+    <img
+      id="tryAgain"
+      class="btn"
+      src="./image/buttons/tryAgainBtn.png"
+      onclick="location.href='index.html'"
+    />
+    <audio src="./audio/sound.wav" id="sound"></audio>
+    <audio src="./audio/bgSound.wav" id="bgSound"></audio>
+
+    <script src="main.js"></script>
+    <script src="common.js"></script>
+  </body>
+</html>
